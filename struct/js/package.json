@@ -1,0 +1,29 @@
+{
+    "name": "MyApp",
+    "version": "0.0.0",
+    "description": "A new app",
+    "main": "",
+    "author": "you",
+    "license": "",
+    "bin": {},
+    "scripts": {
+        "preinstall": "npm install -g grunt-cli@0.1.13"
+    },
+    "devDependencies": {
+        "fs-extra": "^0.8.1",
+        "express": "^4.2.0",
+        "tar.gz": "^0.1.1",
+        "download": "^0.1.16",
+        "grunt": "^0.4.4",
+        "grunt-contrib-copy": "^0.5.0",
+        "grunt-contrib-clean": "^0.5.0",
+        "grunt-contrib-concat": "^0.4.0",
+        "grunt-contrib-htmlmin": "^0.3.0",
+        "grunt-contrib-watch": "^0.6.1",
+        "grunt-contrib-uglify": "^0.4.0",
+        "grunt-contrib-cssmin": "^0.9.0",
+        "grunt-contrib-yuidoc": "^0.5.2",
+        "grunt-text-replace": "^0.3.11"
+    }
+}
+

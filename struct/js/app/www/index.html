@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Start app : {app.title}</title>
+    <!-- Placed in the head of the document -->
+    <link rel="stylesheet" href="{file.libraries.min.css}">
+    <link rel="stylesheet" href="{file.app.min.css}">
+</head>
+<body>
+
+<h1>{app.name}</h1>
+
+Name : {app.name} <br/>
+Version : {app.version} <br/>
+Author : {app.author} <br/>
+Date : {app.date} <br/>
+Application concatened javascript file name : {file.app.js}<br/>
+Application concatened and minified javascript file name : {file.app.min.js}<br/>
+Libraries concatened javascript file name : {file.libraries.js}<br/>
+Libraries concatened and minified javascript file name : {file.libraries.min.js}<br/>
+Application concatened css file name : {file.app.css}<br/>
+Application concatened and minified css file name : {file.app.min.css}<br/>
+Libraries concatened css file name : {file.libraries.css}<br/>
+Libraries concatened and minified css file name : {file.libraries.min.css}<br/>
+
+<br/><br/><br/>
+
+replace from jsfile01.js :
+<div id="test01"></div>
+replace from jsfile02.js:
+<div id="test02"></div>
+replace from jsfile03.js:
+<div id="test03"></div>
+
+
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="{file.libraries.min.js}"></script>
+<script src="{file.app.min.js}"></script>
+
+</body>
+</html>

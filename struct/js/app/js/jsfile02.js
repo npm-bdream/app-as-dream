@@ -1,0 +1,1 @@
+$("#test02").html("{test.test02}");

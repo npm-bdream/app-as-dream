@@ -1,0 +1,36 @@
+{
+    "name": "app-as-dream",
+    "version": "0.0.51",
+    "description": "Starter kit for WebApp development.",
+    "main": "./lib/app.dream",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": {
+        "name": "bdream",
+        "email": "npm.bdream@gmail.com"
+    },
+    "keywords": [
+        "minify",
+        "uglify",
+        "build",
+        "server",
+        "workflow",
+        "grunt",
+        "webapp",
+        "watch",
+        "concat",
+        "js",
+        "css",
+        "html",
+        "archive",
+        "version"
+    ],
+    "license": "",
+    "bin": {
+        "appasdream": "./bin/app.dream"
+    },
+    "dependencies": {
+        "fs-extra": "^0.8.1"
+    }
+}
