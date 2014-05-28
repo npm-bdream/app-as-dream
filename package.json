@@ -1,7 +1,8 @@
 {
     "name": "app-as-dream",
+	"description": "Starter kit for WebApp development.",
     "version": "0.0.51",
-    "description": "Starter kit for WebApp development.",
+	"homepage": "https://github.com/npm-bdream/app-as-dream",
     "main": "./lib/app.dream",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1"

@@ -276,6 +276,10 @@ for more information about installed packages look at their pages :
 Versions
 =========
 
+**v 0.0.52 - 2014/05/28**
+
+* Setup GitHub repositories
+
 **v 0.0.51 - 2014/05/28**
 
 * Now you can use not minified files, 4 more generated files.
