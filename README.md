@@ -179,6 +179,7 @@ With `./AppConf.js` you can manage several aspects in you project, see example f
         * {app.version}
         * {app.author}
         * {app.date}
+        * {app.rid}
         * {file.app.js}
         * {file.app.min.js}
         * {file.libraries.js}
@@ -204,8 +205,8 @@ if you add following lines you can use result of grunt tasks.
     <head>
         <title>Start app : {app.title}</title>
         <!-- Placed in the head of the document -->
-        <link rel="stylesheet" href="{file.libraries.min.css}">
-        <link rel="stylesheet" href="{file.app.min.css}">
+        <link rel="stylesheet" href="{file.libraries.min.css}{app.rid}">
+        <link rel="stylesheet" href="{file.app.min.css}{app.rid}">
     </head>
     <body>
         
@@ -225,8 +226,8 @@ if you add following lines you can use result of grunt tasks.
         Libraries concatened and minified css file name : {file.libraries.min.css}
         
         <!-- Placed at the end of the document so the pages load faster -->
-        <script src="{file.libraries.min.js}"></script>
-        <script src="{file.app.min.js}"></script>
+        <script src="{file.libraries.min.js}{app.rid}"></script>
+        <script src="{file.app.min.js}{app.rid}"></script>
     
     </body>
     </html>
@@ -245,17 +246,11 @@ Now in your browser, you can access this url :
 MORE
 =========
 
-For any requets, You can contact me on this email.
-[npm.bdream@gmail.com](npm.bdream@gmail.com)
+For any requests, You can contact me on this email : npm.bdream@gmail.com
 
 Next steps :
 
-* Maybe add random part in generated files name as `MyApp-app-0.0.15.js?8786454654545454`
-* Looking for a better use of packages. With more settings.
-* Add scp package to uploade web app and releases ?
-* Several environment for the generation ?
-* Implement yuidoc ?
-* The package will be soon in version 0.1.0
+* Improvements are under study
 
 I don't use all features offered by packages.
 
@@ -275,6 +270,11 @@ for more information about installed packages look at their pages :
 
 Versions
 =========
+
+**v 0.1.0 - 2014/06/10*
+
+* Add new defined pattern {app.rid} used for loading files without browser cash problems.
+* {app.rid} is replaced by "?rid=RANDOM_INT"
 
 **v 0.0.52 - 2014/05/28**
 

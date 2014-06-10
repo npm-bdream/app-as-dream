@@ -55,6 +55,11 @@ appasdream.replacements.push({ "from": "{file.app.min.css}", "to": "<%= grunt_co
 appasdream.replacements.push({ "from": "{file.libraries.css}", "to": "<%= grunt_config_name %>-libraries-<%= grunt_config_version %>.css" });
 appasdream.replacements.push({ "from": "{file.libraries.min.css}", "to": "<%= grunt_config_name %>-libraries-<%= grunt_config_version %>.min.css" });
 
+function randomIntInc (low, high) {
+    return Math.floor(Math.random() * (high - low + 1) + low);
+}
+
+appasdream.replacements.push({ "from": "{app.rid}", "to": "?rid="+randomIntInc(0,1000000000) });
 
 // Create concat array for /app/js elements and /app/css elements
 var appJsConcatArray = [];
