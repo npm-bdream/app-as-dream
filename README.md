@@ -271,7 +271,7 @@ for more information about installed packages look at their pages :
 Versions
 =========
 
-**v 0.1.0 - 2014/06/10*
+**v 0.1.0 - 2014/06/10**
 
 * Add new defined pattern {app.rid} used for loading files without browser cash problems.
 * {app.rid} is replaced by "?rid=RANDOM_INT"
